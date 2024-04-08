@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="add Movie"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="262dp"
+        android:layout_height="124dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTenSPAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name movie"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtGiaBanAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Premiere time"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSoLuongAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="add"
+            android:backgroundTint="#0D99FF"
+            android:textColor="@color/black"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+
+        <Button
+            android:id="@+id/btnCancelAdd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:backgroundTint="#878282"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Enter your url to load image" />
+
+        <Button
+            android:id="@+id/btnInsertImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0D99FF"
+            android:layout_below="@id/edtURL"
+            android:text="load image"
+            android:textAllCaps="true"
+            app:cornerRadius="10dp" />
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/errorimg"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/edtURL"/>
+    </RelativeLayout>
+</LinearLayout>

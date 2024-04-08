@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragment.HomeFragment"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/seaechview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edt_search"
+            android:drawablePadding="10dp"
+            android:elevation="20dp"
+            android:inputType="text"
+            android:maxLines="1"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@null"
+            app:queryHint="Search" />
+
+        <ImageView
+            android:id="@+id/icCart"
+            android:layout_width="68dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/cartdr" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="619dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_marginTop="2dp"
+        >
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/frRecycler1"
+            android:layout_width="match_parent"
+
+            android:layout_height="614dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

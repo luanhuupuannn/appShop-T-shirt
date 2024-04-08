@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#FFF5D7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgViewSP"
+                android:layout_width="112dp"
+                android:layout_height="153dp"
+                android:src="@drawable/ic_person" />
+
+            <TextView
+                android:id="@+id/tvMoTaTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameMovie"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/imgViewSP"
+                android:text="Mô Tả:"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tvTonKhoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvMoTaTitle"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toEndOf="@+id/imgViewSP"
+                android:text="Tồn kho:"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tvNameMovie"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/imgViewSP"
+                android:hint="NameMovie"
+                android:textColor="#FF5722"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCategoryandtime"
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNameMovie"
+                android:layout_marginStart="67dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/imgViewSP"
+                android:hint="categoryandtime"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/tvPremieretime"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCategoryandtime"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="68dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="-36dp"
+                android:layout_toEndOf="@+id/imgViewSP"
+                android:hint="premieretime"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/btnBookticket"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tvPremieretime"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="190dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="59dp"
+                android:backgroundTint="#0D99FF"
+                android:text="Đặt Hàng"
+                app:cornerRadius="5dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

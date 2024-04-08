@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_background"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvnamemovietry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#09268F"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Số Lượng:"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Trạng Thái:"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Size:"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Giá:"
+                        android:textColor="#090909"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvQuaitly"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="số lượng"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"/>
+
+
+
+                    <TextView
+                        android:id="@+id/tvidchair"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Số ghế"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/tvtime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="thời gian"
+                        android:textColor="#FA0808"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="giá phim "
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginTop="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Placeholder for delete icon if needed -->
+                <!--
+                <ImageView
+                    android:id="@+id/icDeleteSP1"
+                    android:layout_width="38dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_delete" />
+                -->
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

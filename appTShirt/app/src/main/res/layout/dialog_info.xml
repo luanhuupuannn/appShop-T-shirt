@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Hướng dẫn đặt vé xem phim "/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="627dp"
+        android:src="@drawable/infoandmin" />
+
+    <Button
+        android:id="@+id/btnokinfo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0D99FF"
+        android:text="OK"
+        android:layout_gravity="right"
+        app:cornerRadius="10dp">
+
+    </Button>
+</LinearLayout>
+
+
+

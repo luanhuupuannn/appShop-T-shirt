@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Account.RegisterActivity">
+
+    <ImageView
+        android:layout_width="360dp"
+        android:layout_height="215dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="registration"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textAllCaps="true"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userNameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F3F3"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="Username"
+            android:inputType="text"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fullNameRegister"
+            android:background="#F3F3F3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fullname"
+            android:inputType="text"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/ic_person_outline"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="#F3F3F3"
+
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:drawableLeft="@drawable/pass"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/confirmPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:textSize="20dp"
+            android:background="#F3F3F3"
+            android:drawableLeft="@drawable/pass"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="374dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F4BBC9"
+        android:text="register"
+        android:textAllCaps="true"
+        android:textSize="20dp"
+
+        android:textStyle="bold"
+        app:cornerRadius="15dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Login"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+</LinearLayout>

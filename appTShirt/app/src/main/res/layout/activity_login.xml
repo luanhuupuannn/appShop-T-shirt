@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account.LoginActivity"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="34sp"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        android:background="#F3F3F3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/UsernameLogin"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:drawableLeft="@drawable/user"
+            android:hint="  User name"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxCornerRadiusBottomEnd="10dp"
+        app:boxCornerRadiusBottomStart="10dp"
+        app:boxCornerRadiusTopEnd="10dp"
+        app:boxCornerRadiusTopStart="10dp"
+        android:background="#F3F3F3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/PasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:drawableLeft="@drawable/pass"
+            android:hint="  Password"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/AdminCB"
+            android:layout_width="177dp"
+            android:layout_height="wrap_content"
+            android:text="Admin" />
+
+        <CheckBox
+            android:id="@+id/UserCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+
+        android:backgroundTint="#F4BBC9"
+        android:text="Login"
+        android:textSize="24sp"
+        app:cornerRadius="15dp" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"></TextView>
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Register"></TextView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Forgot password"></TextView>
+
+</LinearLayout>
